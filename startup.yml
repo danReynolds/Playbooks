@@ -1,10 +1,20 @@
-hosts: Raspberry
-  become: yes
+- hosts: 127.0.0.1
+  remote_user: pi
+  connection: local
   tasks:
 
     - name: ensure mpd is stopped
       service: name=mpd state=stopped
-
+      become: yes
+    
     - name: ensure mopidy is running
-      service: name=mopidy state=started enabled=yes
+      become: yes
+      become_user: pi
+      become_method: sudo
+      shell: /usr/bin/mopidy &
 
+    - name: ensure ngrok is running
+      become: yes
+      become_user: pi
+      become_method: sudo
+      shell: /usr/local/bin/ngrok http -subdomain softies 8000 &
