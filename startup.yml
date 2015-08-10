@@ -1,0 +1,10 @@
+hosts: Raspberry
+  become: yes
+  tasks:
+
+    - name: ensure mpd is stopped
+      service: name=mpd state=stopped
+
+    - name: ensure mopidy is running
+      service: name=mopidy state=started enabled=yes
+
