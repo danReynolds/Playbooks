@@ -9,10 +9,10 @@
     
     - name: ensure mopidy is running
       become_user: pi
+      become: yes
       shell: /usr/local/bin/mopidy &
 
     - name: ensure ngrok is running
       become: yes
       become_user: pi
-      become_method: sudo
       shell: /usr/local/bin/ngrok http -subdomain softies 8000 &
