@@ -8,7 +8,6 @@
       become: yes
     
     - name: ensure mopidy is running
-      become: yes
       become_user: pi
       shell: /usr/local/bin/mopidy &
 
