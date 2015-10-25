@@ -10,7 +10,6 @@
     - name: ensure mopidy is running
       become: yes
       become_user: pi
-      become_method: sudo
       shell: /usr/bin/mopidy &
 
     - name: ensure ngrok is running
