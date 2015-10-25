@@ -9,7 +9,7 @@
     
     - name: ensure mopidy is running
       become_user: pi
-      shell: /usr/bin/mopidy &
+      shell: /usr/local/bin/mopidy &
 
     - name: ensure ngrok is running
       become: yes
