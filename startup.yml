@@ -15,4 +15,4 @@
     - name: ensure ngrok is running
       become: yes
       become_user: pi
-      shell: /usr/local/bin/ngrok http -subdomain softies 8000 &
+      shell: /usr/local/bin/ngrok music ssh
