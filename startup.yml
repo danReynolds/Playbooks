@@ -19,7 +19,7 @@
     - name: ensure ngrok is running
       become: yes
       become_user: pi
-      shell: source $(rvm 2.2.1 do rvm env --path) && rvm gemset use global && ruby /home/pi/reboot.rb && touch blah.txt
+      shell: . source $(rvm 2.2.1 do rvm env --path) && rvm gemset use global && ruby /home/pi/reboot.rb && touch blah.txt
 
     - name: ensure ngrok is running
       become: yes
