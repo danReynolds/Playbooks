@@ -16,8 +16,3 @@
       become: yes
       become_user: pi
       shell: /usr/local/bin/ngrok start music ssh &
-    
-    - name: ensure red button is functional
-      become: yes
-      become_user: pi
-      shell: touch /home/pi/here.txt && /home/pi/test.sh &
