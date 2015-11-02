@@ -21,7 +21,7 @@
       become_user: pi
       shell: /usr/local/bin/ngrok start music ssh &
       
-    - name: ensure ngrok is running
+    - name: ensure big red button is running
       become: yes
       become_user: pi
       shell: . $(rvm 2.2.1 do rvm env --path) && rvm gemset use global && ruby /home/pi/reboot.rb
