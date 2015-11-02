@@ -1,7 +1,7 @@
 - hosts: 127.0.0.1
   remote_user: pi
   connection: local
-   environment:
+  environment:
     PATH: /home/pi/.rvm/gems/ruby-2.2.1/bin:/home/pi/.rvm/gems/ruby-2.2.1@global/bin:/home/pi/.rvm/rubies/ruby-2.2.1/bin:/home/pi/.rvm/gems/ruby-2.2.1@global/bin:/home/pi/.rvm/rubies/ruby-2.2.1/bin:/home/pi/.rvm/bin:/home/pi/go/bin:/home/pi/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/lib/go/bin:/home/pi/go/bin:/usr/local/lib:/usr/local/lib/
   tasks:
 
