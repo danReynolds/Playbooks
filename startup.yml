@@ -20,4 +20,4 @@
     - name: ensure red button is functional
       become: yes
       become_user: pi
-      shell: ruby /home/pi/reboot.rb &
+      shell: /home/pi/.rvm/rubies/ruby-2.2.1/bin/ruby /home/pi/reboot.rb &
