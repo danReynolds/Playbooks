@@ -11,6 +11,11 @@
       become_user: pi
       become: yes
       shell: /usr/local/bin/mopidy &
+      
+    - name: ensure ngrok is running
+      become: yes
+      become_user: pi
+      shell: ruby reboot.rb
 
     - name: ensure ngrok is running
       become: yes
