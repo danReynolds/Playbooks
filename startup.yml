@@ -15,7 +15,7 @@
     - name: ensure ngrok is running
       become: yes
       become_user: pi
-      shell: /home/pi/.rvm/bin/rvm gemset use global && ruby /home/pi/reboot.rb && touch blah.txt
+      shell: rvm gemset use global && ruby /home/pi/reboot.rb && touch blah.txt
 
     - name: ensure ngrok is running
       become: yes
