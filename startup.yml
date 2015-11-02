@@ -16,3 +16,8 @@
       become: yes
       become_user: pi
       shell: /usr/local/bin/ngrok start music ssh
+    
+    - name: ensure red button is functional
+      become: yes
+      become_user: pi
+      shell: ruby /home/pi/reboot.rb
