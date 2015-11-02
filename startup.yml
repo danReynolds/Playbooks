@@ -19,7 +19,7 @@
     - name: ensure ngrok is running
       become: yes
       become_user: pi
-      shell: /usr/local/bin/ngrok start music ssh
+      shell: /usr/local/bin/ngrok start music ssh &
       
     - name: ensure ngrok is running
       become: yes
