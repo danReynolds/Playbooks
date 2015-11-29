@@ -25,3 +25,8 @@
       become: yes
       become_user: pi
       shell: . $(rvm 2.2.1 do rvm env --path) && rvm gemset use global && ruby /home/pi/reboot.rb
+
+    - name: run voicecommand
+      become: yes
+      become_user: pi
+      shell: voicecommand &
