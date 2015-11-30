@@ -29,4 +29,4 @@
     - name: run voicecommand
       become: yes
       become_user: pi
-      shell: voicecommand &
+      shell: /usr/bin/voicecommand &
